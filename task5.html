@@ -1,0 +1,159 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>task 5</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 50%;
+            margin-left:250px;
+        }
+        
+        th,
+        td {
+            padding: 5px;
+            border: 3px solid #ccc;
+        }
+        
+        th {
+            
+            width: 38%;
+        }
+        
+        td {
+            width: 100%;
+            font-weight: bold;
+        }
+        
+        .blank-space {
+            width: 50%;
+        }
+        
+        .center {
+            text-align: center;
+        }
+        
+        .border-left {
+            text-align: right;
+        }
+        
+        .register {
+            text-align: center;
+        }
+        #border{
+            border:1px solid black;
+            width:1100px;
+            margin-left:40px;
+        }
+        legend{
+        border:1px solid black;
+        background-color:yellow;
+        margin-left:600px;
+
+        }
+        fieldset{
+        margin:150px;
+        }
+    </style>
+</head>
+
+<body>
+<fieldset>
+<legend>task 5</legend>
+<form>
+<div id="border">
+    <h1 style="color:hsla(250, 100%, 50%, 0.797)" ; class="register">Registration form</h1>
+    <table>
+        <tr>
+            <th>First Name</th>
+            <td class="blank-space">
+           <input type="text" ></td>
+            
+        </tr>
+        <tr>
+            <th>Last Name</th>
+            <td class="blank-space"><input type="text" ></td>
+        </tr>
+        <tr>
+            <th>Email</th>
+            <td class="blank-space"><input type="email" ></td>
+        </tr>
+        <tr>
+            <th> Password:</th>
+            <td class="blank-space"><input type="password" ></td>
+        </tr>
+        <tr>
+            <th>Re-enter Password:</th>
+            <td class="blank-space"><input type="password" ></td>
+        </tr>
+        <tr rowspan="2">
+            <th>Gender:</th>
+            <td>
+                <input type="radio" name="gender" value="male"> Male
+                <br>
+                <input type="radio" name="gender" value="female"> Female
+            </td>
+        </tr>
+        <tr>
+            <th>Age:</th>
+            <td class="blank-space"><input type="text" ></td>
+        </tr>
+        <tr>
+            <th>Phone Number:</th>
+            <td class="blank-space"><input type="text" ></td>
+        </tr>
+
+        <tr rowspan="4">
+            <th>Address:</th>
+            <td class="blank-space"><input type="text" ></td>
+        </tr>
+        <br>
+
+        <tr>
+            <th>State:</th>
+            <td class="blank-space"><input type="text" ></td>
+        </tr>
+        <tr>
+            <th>Country:</th>
+            <td>
+                <select>
+                    <option value="India">Choose your Country</option>
+                    <option value="USA">Choose your Country</option>
+                    <option value="UK">Choose your Country</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <th>Languages Known:</th>
+            <td>
+                <input type="checkbox" name="language" value="English"> English
+                <input type="checkbox" name="language" value="Kannada"> Kannada
+                <input type="checkbox" name="language" value="Hindi"> Hindi
+                <input type="checkbox" name="language" value="Telugu"> Telugu
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" style="width:100%">
+                <input type="checkbox" name="declaration" required> Hereby I declare all the given details are true
+            </td>
+        </tr>
+        <tr>
+            <th colspan="2">
+                <div class="border-left">
+                    <span class="link-text">login to</span> <a href="https://www.ethnus.com" target="_blank">Ethnus</a><span class="link-text">website</span>
+                </div>
+            </th>
+        </tr>
+    </table>
+    <br>
+    <div class="center">
+        <input type="submit" value="Register" class="center">
+</div>
+    </div>
+</fieldset>
+</form>
+</body>
+
+</html>
